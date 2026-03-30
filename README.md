@@ -29,8 +29,28 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deploy to Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template-nextjs&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F%5BUSER_NAME%5D%2Fdecision-mirror&env=OPENROUTER_API_KEY,NEXT_PUBLIC_SITE_URL&envDescription=Add%20your%20OpenRouter%20API%20key%20and%20public%20site%20URL&envLink=https%3A%2F%2Fopenrouter.ai%2Fkeys)
+
+### Manual Deployment Steps
+
+1.  **Push to GitHub/GitLab/Bitbucket**: Ensure your repository is pushed to a Git provider.
+2.  **Import to Vercel**: Go to [vercel.com/new](https://vercel.com/new) and select your repository.
+3.  **Configure Environment Variables**:
+    *   `OPENROUTER_API_KEY`: Your OpenRouter API key.
+    *   `NEXT_PUBLIC_SITE_URL`: Your production URL (e.g., `https://your-app.vercel.app`).
+4.  **Deploy**: Click "Deploy". Vercel will automatically detect the Next.js settings and handle the build.
+
+### Environment Variables
+
+Ensure you have the following environment variables configured in your Vercel project:
+
+| Variable | Description |
+| :--- | :--- |
+| `OPENROUTER_API_KEY` | Your OpenRouter API key found in your [OpenRouter Dashboard](https://openrouter.ai/keys). |
+| `NEXT_PUBLIC_SITE_URL` | The public URL of your application (used for API referrers). |
+| `OPENROUTER_MODEL` | (Optional) The specific model you want to use (e.g., `openai/gpt-4o-mini`). |
+
